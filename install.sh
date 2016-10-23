@@ -22,9 +22,9 @@ sudo mkdir -p /opt/kibana/node/bin/npm
 # Install re-reqs
 sudo apt-get install -y ant zip
 
-sudo wget -O /tmp/elasticsearch.tgz https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/${ES_VERSION}/elasticsearch-${ES_VERSION}.tar.gz
+sudo wget -O /tmp/elasticsearch.tgz https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/${ES_VERSION}/elasticsearch-${ES_VERSION}.deb
 sudo wget -O /tmp/kibana.tgz https://download.elastic.co/kibana/kibana/kibana-${KIBANA_VERSION}-linux-x86_64.tar.gz
-sudo wget -O /tmp/logstash.tgz https://download.elastic.co/logstash/logstash/logstash-${LS_VERSION}.tar.gz
+sudo wget -O /tmp/logstash.tgz https://download.elastic.co/logstash/logstash/packages/debian/logstash-${LS_VERSION}_all.deb
 sudo wget -O /tmp/node_latest_armhf.deb http://node-arm.herokuapp.com/node_latest_armhf.deb
 sudo git clone https://github.com/jnr/jffi.git /tmp/jffi
 
